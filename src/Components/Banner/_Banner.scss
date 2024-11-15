@@ -1,0 +1,64 @@
+@import "./../../Styles/Base/_variables.scss";
+@import "./../../Styles/Base/_icons.scss";
+
+.banner {
+  position: relative;
+  img {
+    width: 100%;
+  }
+
+
+  .banner__content {
+    position: absolute;
+    top: 9.61875rem;
+    left: 10.75rem;
+    h1 {
+      font-size: 3.125rem;
+      font-weight: 600;
+      color: $whitecolor;
+      line-height: 5rem;
+    }
+    pre {
+      font-size: 1.5rem;
+      color: $whitecolor;
+      line-height: 1.6875rem;
+      font-weight: 400;
+      .Home{
+        color: $whitecolor;
+        text-decoration: none;
+        cursor: pointer;
+      }
+    }
+  }
+}
+@media (max-width: 768px){
+  .banner{
+    position: relative;
+    .banner__content{
+      position: absolute;
+      top: 20%;
+      left: 7%;
+    }
+  }
+}
+@media(max-width: 375px){
+  .banner{
+    img{
+      height: 20vh;
+    }
+
+    position: relative;
+    .banner__content{
+       position: absolute;
+       top: 5%;
+       left: 5%;
+       h1{
+        font-size: 1.5rem;
+       }
+       pre{
+        font-size: .8rem;
+       }
+
+    }
+  }
+}

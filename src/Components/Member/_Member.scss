@@ -1,0 +1,42 @@
+@import "./../../Styles/Base/_icons.scss";
+@import "./../../Styles/Base/_variables.scss";
+
+.member {
+    background-image: url(../../assets/Member/members__banner__desktop.png);
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    width: 100%;
+    padding: 5.6875rem 65rem 8.1875rem 10.625rem;
+    .member__h2 {
+      color: $whitecolor;
+      font-size: 3.125rem;
+      font-family: $fontFamily;
+      margin: 0;
+      line-height: 4rem;
+    }
+  
+    .member__p {
+      font-family: $fontFamily;
+  
+      font-size: 1.75rem;
+      color: $whitecolor;
+      margin: 0;
+      margin-top: 1.8rem;
+      line-height: 2.5rem;
+    }
+  
+    .member__btn {
+      padding: 1rem 3.313rem;
+      color: var(--bgNav);
+      font-family: $fontFamily;
+      background-color: #f6f6f6;
+      border: none;
+      border-radius: 0;
+      margin-top: 2.5rem;
+      & :hover {
+        background-color: $whitecolor;
+      }
+    }
+  }
+  

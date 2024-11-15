@@ -1,0 +1,30 @@
+@import "/src/Styles/Base/icons";
+@import "/src/Styles/Base/variables";
+
+#backToTopBtn {
+  position: fixed;
+  bottom: 5rem;
+  right: 0.5rem;
+  display: none;
+  background-color: transparent;
+  color: $pinkColor;
+  border: none;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  font-family: $fontFamily;
+  font-weight: 700;
+  cursor: pointer;
+  z-index: 100;
+  transform: rotate(-90deg);
+  &:hover {
+    background-color: transparent;
+  }
+}
+
+@media (max-width: 375px) {
+  #backToTopBtn {
+    position: fixed;
+    right: 0.1rem;
+    font-size: 1rem;
+  }
+}

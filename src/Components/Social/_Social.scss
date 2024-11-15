@@ -1,0 +1,43 @@
+@import "/src/Styles/Base/_icons.scss";
+@import "/src/Styles/Base/_variables.scss";
+
+.social {
+    .social__img {
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+    .social__content {
+      padding: 10.69rem 10.69rem 10.875rem 5rem;
+      background-color: $greyBg;
+      height: 100%;
+      .social__content__p1 {
+        color: $pinkColor;
+        font-family: $fontFamily;
+      }
+      .social__content__h2 {
+        font-weight: 600;
+        font-family: $fontFamily;
+        font-size: 3.5rem;
+      }
+      .social__content__p2 {
+        font-size: 1.75rem;
+        margin-top: 3rem;
+        line-height: 2.5rem;
+      }
+      .social__btn {
+        padding: 1.2rem 4.625rem;
+        background-color: $purpleColor;
+        color: $whitecolor;
+        font-size: 1.5rem;
+        margin-top: 3rem;
+        border: none;
+        border-radius: 0;
+        &:hover {
+          background-color: $bgNav;
+          color: $whitecolor;
+        }
+      }
+    }
+  }
+  

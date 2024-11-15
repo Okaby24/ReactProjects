@@ -1,0 +1,101 @@
+@import "./../../Styles/Base/_variables.scss";
+@import "./../../Styles/Base/icons";
+
+header {
+  overflow: hidden;
+  background-color: $bgNav;
+  position: sticky;
+  width: 100%;
+  z-index: 1000;
+  .navbar {
+    padding: 1.75rem 0rem;
+
+    .hidden-search {
+      display: none;
+    }
+    .navbar-toggler {
+      border: none;
+      background-color: transparent;
+    }
+
+    .navbar-toggler-icon {
+      display: inline-block;
+      width: 30px;
+      height: 2px;
+      background-color: white;
+      position: relative;
+    }
+
+    .navbar-toggler-icon::before,
+    .navbar-toggler-icon::after {
+      content: "";
+      display: block;
+      width: 100%;
+      height: 100%;
+      background-color: white;
+      position: absolute;
+      left: 0;
+    }
+
+    .navbar-toggler-icon::before {
+      top: -8px;
+    }
+
+    .navbar-toggler-icon::after {
+      top: 8px;
+    }
+
+    .navbar-nav {
+      margin: auto;
+    }
+    .nav-item {
+      .nav-link {
+        color: $whitecolor;
+        font-size: 1.25rem;
+        font-family: $fontFamily;
+      }
+      &:not(:first-child) {
+        margin-inline-start: 2.625rem;
+      }
+    }
+    .icon-search {
+      color: $whitecolor;
+      margin-inline-end: 2.438rem;
+      cursor: pointer;
+      font-size: 1.413rem;
+    }
+    .lang-drop {
+      margin-inline-end: 2.313rem;
+      &:hover {
+        color: $whitecolor;
+      }
+      a {
+        color: $whitecolor;
+      }
+    }
+
+    .icon-Drop_down {
+      font-size: 0.409rem;
+      position: relative;
+      bottom: 0.25rem;
+      left: 0.625rem;
+    }
+
+    .member-btn {
+      padding: 0.875rem 1.875rem;
+      color: $whitecolor;
+      border-color: $whitecolor;
+      border-radius: 0;
+
+      &:hover {
+        background-color: $whitecolor;
+        color: $bgNav;
+      }
+    }
+    .nav-content {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}

@@ -1,0 +1,123 @@
+@import "./../../Styles/Base/_variables.scss";
+@import "./../../Styles/Base/_icons.scss";
+
+.events {
+  display: flex;
+  padding: 7.438rem 0rem 7.5rem 10.688rem;
+  overflow: hidden;
+
+  .container-fluid {
+    padding: 0;
+
+    .events__content {
+      display: flex;
+
+      .events__body {
+        p {
+          margin: 0;
+          padding: 0;
+          color: $pinkColor;
+          font-weight: 600;
+          font-family: $fontFamily;
+        }
+
+        h2 {
+          margin: 0;
+          padding: 0;
+          font-size: 4rem;
+        }
+
+        .events__btn-left,
+        .events__btn-right {
+          margin-top: 2.5rem;
+          padding: 1.25rem;
+          background-color: $bgNav;
+          color: $whitecolor;
+          border: none;
+          border-radius: 0;
+          font-size: 1.25rem;
+        }
+
+        .events__btn-bottom {
+          display: block;
+          margin-top: 4rem;
+          background-color: $purpleColor;
+          padding: 1rem 4.375rem;
+          color: $whitecolor;
+          border: none;
+          border-radius: 0;
+
+          &:hover {
+            background-color: $bgNav;
+            color: $whitecolor;
+          }
+        }
+      }
+
+      .events__cards-wrapper {
+        transform: translateX(50px);
+
+        .owl-events .item img {
+          height: 100%;
+          object-fit: cover;
+          object-position: top;
+        }
+      }
+    }
+
+    .item .card {
+      max-width: 85%;
+      border: none;
+
+      img {
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .events__card-top {
+        display: flex;
+      }
+
+      .card-body {
+        .events__card-top {
+          margin: 0;
+          margin-top: 1.5rem;
+
+          span {
+            position: relative;
+            top: 0.25rem;
+            font-size: 1.5rem;
+            margin-inline-end: 1rem;
+            color: $pinkColor;
+          }
+
+          .events__card-top-p {
+            font-size: 1.5rem;
+            margin: 0;
+          }
+        }
+
+        h4 {
+          margin-top: 1.5rem;
+        }
+
+        .events__card-body__p {
+          margin-top: 1.75rem;
+          font-weight: 500;
+          opacity: 86%;
+
+          span {
+            margin-inline-start: 0.625rem;
+            font-size: 1.1875rem;
+            position: relative;
+            top: 0.25rem;
+          }
+        }
+      }
+    }
+  }
+
+  .mobile-nav-btns {
+    display: none;
+  }
+}

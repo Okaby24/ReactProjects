@@ -1,0 +1,72 @@
+
+
+@import "./../../Styles/Base/_variables.scss";
+@import "./../../Styles/Base/_icons.scss";
+
+.settings-container {
+    position: fixed;
+    right: 0;
+    top: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1000;
+    .settings-button {
+      width: 5rem;
+      height: 5rem;
+      background-color: black;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      border-radius: 0;
+      position: relative;
+      transition: all 0.3s ease;
+      font-size: 2rem;
+    }
+    .icon-settings {
+      display: block;
+    }
+  
+    .icon-close {
+      display: none;
+    }
+    .active {
+      .icon-settings {
+        display: none;
+      }
+      .icon-close {
+        display: block;
+      }
+      .settings-expanded {
+        height: auto;
+        opacity: 1;
+      }
+    }
+    .settings-expanded {
+      overflow: hidden;
+      height: 0;
+      opacity: 0;
+      transition: height 0.5s ease, opacity 0.3s ease;
+      span {
+        background-color: black;
+        color: white;
+        padding: 10px;
+        width: 5rem;
+        height: 5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 0;
+        margin: 0;
+      }
+    }
+  }
+  @media (max-width : 375px){
+    .settings-container{
+      width: 2rem;
+      height: 4rem;
+      
+    }
+  }

@@ -1,0 +1,207 @@
+@import "./../../Styles/Base/_variables.scss";
+@import "./../../Styles/Base/_icons.scss";
+.container{
+.sort{
+  padding: 0.5625rem 3.3875rem 0.75rem 3.4375rem;
+  margin-top: 5rem;
+  
+}
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  .card {
+    max-width: 31.125rem;
+    margin-top: 2.625rem;
+
+    .card-body {
+      padding: 2.5rem;
+      background-color: $greyColor;
+    }
+    position: relative;
+    overflow: hidden;
+    .image-container {
+      position: relative;
+      width: 100%;
+      padding-top: 56.25%; // 16:9 aspect ratio
+      overflow: hidden;
+
+      img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.5s ease;
+
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+    }
+
+    .card-body__top__content {
+      display: flex;
+      align-items: center;
+    }
+    .line {
+      border: 1px solid $pinkColor;
+      width: 12%;
+      height: 1px;
+      position: relative;
+      bottom: 0.5rem;
+      margin-inline-end: 1rem;
+    }
+    .latest__smaller-card-body {
+      display: flex;
+      align-items: center;
+      display: none;
+    }
+    .card-body__top__content span {
+      color: $pinkColor;
+      margin-inline-start: 0.375rem;
+    }
+    .card-body__bottom__content {
+      display: flex;
+      justify-content: space-between;
+      position: relative;
+      top: 1.7rem;
+    }
+    .card-body__bottom__content p {
+      font-size: 1.125rem;
+      font-family: $fontFamily;
+    }
+    .card-body__bottom__content span {
+      font-size: 1.5rem;
+    }
+    .card-body h5 {
+      font-weight: 600;
+      font-size: 1.875rem;
+      font-family: $fontFamily;
+      line-height: 2.5rem;
+      & :hover {
+        color: darkblue;
+      }
+    }
+    .icon-pen {
+      color: $pinkColor;
+      margin-inline-end: 1rem;
+      position: relative;
+      bottom: 0.5rem;
+    }
+    .latest__name {
+      display: flex;
+      align-items: center;
+    }
+
+    .latest__name p {
+      color: #464646;
+    }
+
+    .latest__date {
+      display: flex;
+      align-items: center;
+    }
+    .icon-calendar {
+      color: $pinkColor;
+      margin-inline-end: 0.5rem;
+      position: relative;
+      bottom: 0.5rem;
+    }
+  }
+  
+}
+/* Pagination Styles */
+.pagination {
+  display: flex;
+  justify-content: center; /* Center the pagination buttons */
+  margin-top: 20px; /* Space above the pagination */
+  gap: 8px; /* Space between buttons */
+
+  button {
+    background-color: #f1f1f1; /* Light background for buttons */
+    border: none; /* Remove default border */
+    padding: 8px 12px; /* Padding for button */
+    font-size: 16px; /* Font size */
+    cursor: pointer; /* Change cursor on hover */
+    border-radius: 4px; /* Rounded corners */
+    transition: background-color 0.3s ease; /* Smooth transition for hover */
+
+    &:hover {
+      background-color: #ddd; /* Darker background on hover */
+    }
+  }
+
+  /* Active Button Styles */
+  .active {
+    background-color: #007bff; /* Primary color for active button */
+    color: white; /* White text for active button */
+    font-weight: bold; /* Bold text for active button */
+  }
+}
+
+
+.selected-article-container {
+  margin-top: 5.625rem;
+  img {
+    float: left;
+    margin-inline-end: 2.562rem;
+  }
+  .expanded__card-img {
+    max-width: 43.625rem;
+  }
+  .card-body__top__content {
+    display: flex;
+    align-items: center;
+  }
+  .line {
+    border: 1px solid $pinkColor;
+    width: 4%;
+    height: 1px;
+    position: relative;
+    bottom: 0.5rem;
+    margin-inline-end: 1rem;
+  }
+  h2 {
+    line-height: 4.1875rem;
+    font-size: 3.125rem;
+  }
+  .card-body__bottom__content {
+    display: flex;
+  }
+  .card-body__bottom__content p {
+    font-size: 1.125rem;
+    font-family: $fontFamily;
+  }
+  .card-body__bottom__content span {
+    font-size: 1.5rem;
+  }
+  .icon-pen {
+    color: $pinkColor;
+    margin-inline-end: 1rem;
+    position: relative;
+    bottom: 0.5rem;
+  }
+  .latest__name {
+    display: flex;
+    align-items: center;
+  }
+
+  .latest__name p {
+    color: #464646;
+  }
+
+  .latest__date {
+    display: flex;
+    align-items: center;
+    margin-inline-start: 5.4375rem;
+  }
+  .icon-calendar {
+    color: $pinkColor;
+    margin-inline-end: 0.5rem;
+    position: relative;
+    bottom: 0.5rem;
+  }
+}
+}
